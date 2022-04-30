@@ -153,6 +153,27 @@ themes
 ```
 
 
+License
+-------
 
+The Themes are released under a BSD or Creative Commons license.  
+Some Components and Plugins can be released under licenses that   
+guarantee a certain specific set of freedoms - GPL, MIT, etc.  
+
+[LICENSE](LICENSE)
+
+Code contributions
+----------------
+
+If find a bug or it's a feature that you think would need to be discussed please open an issue first,   
+otherwise, you can follow this process:
+
+1. Fork the project [Fork a Repo](http://help.github.com/fork-a-repo/)
+2. Create a feature branch : `git checkout -b my_branch`
+3. Push your changes to your new branch : `git push origin my_branch`
+4. Initiate a pull request [About Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+5. Your pull request will be reviewed and hopefully merged :)
+
+Have Fun ^_^/
 
 
