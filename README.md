@@ -31,9 +31,10 @@ License | GPL
 
 -----
 
-### Overview   
 
-Render Engine - Smarty is a template engine for PHP, facilitating the separation of presentation (HTML/CSS) from application logic.
+## Overview   
+
+Render Engine - Smarty is a template engine for PHP, facilitating the separation of presentation (HTML/CSS) from application logic.  
 This implies that PHP code is application logic, and is separated from the presentation, making it easier to customize theme and templates.
 
 [What is Smarty v2](https://www.smarty.net/docsv2/en/what.is.smarty.tpl)    
@@ -46,10 +47,86 @@ This implies that PHP code is application logic, and is separated from the prese
 - Flexbox layout
 - Responsive theme
 - CSS Custom properties
-- Localization
+- Localization    
 
 
-#### Folder Structure
+### Install or Update Themes
+
+1. Select a branch from this repo and, from the dropdown button "Code" select Clone or Download zip.  
+2. Extract and upload the folder "theme-name" to your domain, eg.: public/html/themes/theme-name/*.*  
+3. From the Administration dashboard, activate the Theme (checkbox/select).  
+  
+Or, from the Administration dashboard, click "X-Update Manager" to automatically download and install    
+from the Theme Store for free.
+
+
+
+## Feature Branch Workflow
+
+Branches are used to build independent Themes, Templates, Components and features.  
+Following the core idea behind the **Feature Branch Workflow** each theme development   
+takes place in a dedicated branch instead of the main branch. This encapsulation makes   
+it easy for multiple themes built with a specific CSS framework or xLayout.
+
+### 1 - Clone the repository   
+
+You can clone the repository to create a local copy on your computer.  
+This gives us access to all branches in this repository.
+
+``` 
+git clone https://github.com/xoopscube/xcl-themes-xlayout.git
+```
+
+> When you clone a repository, you get the **main** branch by default.   
+> This means you will have to checkout another branch yourself.   
+> You can easily switch between each branch using GitHub Desktop.  
+
+
+
+### 2 - Clone a Specific Branch
+
+There are two ways to clone a specific branch. You can either:
+
+a) Clone the repository, fetch all branches, and checkout a specific branch.
+b) Clone the repository and fetch only a single branch.  
+
+#### Option One  
+
+``` 
+git clone --branch <branchname> <remote-repo-url>
+```
+
+or using **-b** an alias for --branch
+
+``` 
+git clone -b <branchname> <remote-repo-url>
+``` 
+
+#### Option Two
+
+``` 
+git clone --branch <branch-theme-name> --single-branch <remote-repo-url>
+``` 
+
+or using **-b** an alias for --branch
+
+``` 
+git clone -b <branch-theme-name> --single-branch <remote-repo-url>
+``` 
+
+> This performs the same action as option one, except that the **--single-branch** option   
+> only fetch the files from the specified Theme branch without fetching other branches.
+
+
+**Learn more...**   
+  
+- [Git Basics - Getting a Git Repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)  
+- [GitHub - Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)  
+
+
+
+
+#### Theme Folder Structure
 
 ```bash
 themes
@@ -59,10 +136,6 @@ themes
     │   README.md
     │   screenshot.png
     │   theme.html
-    │   theme_already_js.php
-    │   theme_assign_language.php
-    │   theme_assign_menu.php
-    │   theme_redirect_js.html
     │
     ├───component
     ├───css
@@ -81,12 +154,5 @@ themes
 
 
 
-## Installation
 
-1. Select the repo Branch "theme-name" and, from the dropdown button "Code" select Clone or Download zip.  
-2. Extract and upload the folder "theme-name" to your domain, eg.: public/html/themes/theme-name/*.*  
-3. From the Administration dashboard, activate the Theme (checkbox/select).  
-  
-Or, from the Administration dashboard, click "X-Update Manager" to automatically download and install    
-from the Theme Store for free.
 
